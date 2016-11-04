@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'i_pixel_uregular';
+    src: url('../fonts/i-pixel-u-webfont.woff2') format('woff2'),
+         url('../fonts/i-pixel-u-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'i_pixel_uregular';
+	background:  url('../img/grid.png') bottom center no-repeat, url('../img/bg.jpg') top left repeat;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+}
+
+#logo {
+	background: url('../img/logo.png') 0 0 no-repeat;
+	width: 428px;
+	height: 88px;
+	position: absolute;
+	left: 50%;
+	margin-left: -214px;
+	top: 30px;
+}
+
+#score-high,
+#score-current,
+#speed,
+#timer {
+	font-size: 30px;
+}
+
+#score-high > span,
+#score-current > span {
+	
+}
+
+#speed > span,
+#timer > span {
+	font-size: 68px;
+}
+
+#score-high {
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	color: #fff;
+}
+
+#score-current {
+	text-align: right;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	color: #fff;
+}
+
+#speed {
+	position: absolute;
+	bottom: 20px;
+	left: 30px;
+	color: #fff;
+}
+
+#timer {
+	position: absolute;
+	bottom: 20px;
+	right: 30px;
+	color: #fff;
+}
+
+
+#score-current,
+#speed,
+#timer {
+	background: linear-gradient(to bottom, rgba(89,89,89,1) 0%, rgba(255,255,255,1) 50%, rgba(89,89,89,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#score-high,
+#speed > span,
+#timer > span {
+	background: linear-gradient(to bottom, rgba(255,112,2,1) 0%, rgba(253,253,97,1) 50%, rgba(255,170,0,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#viewDiv {
+    width: 750;
+    height: 530px;
+    position: relative;
+    margin: auto;
+    top: 130px;
+    pointer-events: none;
+	-webkit-filter: saturate(9) hue-rotate(220deg) invert(0) opacity(1) brightness(0.9) contrast(0.9);
+}
+
+#car{
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	bottom:70px;
+}
+
+#carSprite {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:200px;
+}
+
+#startButton{
+	position: absolute;
+	z-index: 90;
+	width: 340px;
+	height: 88px;
+	top: 160px;
+	font-size: 36px;
+	left: 50%;
+	background-color: #aa297b;
+	color: #fdf759;
+	margin-left: -170px;
+	border: none;
+	text-transform: uppercase;
+	font-family: 'i_pixel_uregular'
+}
+#tryagainButton{
+	position: absolute;
+    z-index: 90;
+    bottom: -66px;
+    font-size: 25;
+    left: 75%;
+    background-color: #aa297b;
+    color: #fdf759;
+    margin-left: -170px;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'i_pixel_uregular';
+}
+#leaderboardButton{
+	position: absolute;
+    z-index: 90;
+    bottom: -66px;
+    font-size: 25;
+    left: 45%;
+    background-color: #aa297b;
+    color: #fdf759;
+    margin-left: -170px;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'i_pixel_uregular';
+}
+
+#page-assets {
+	position: relative;
+    width: 510px;
+    left: 50%;
+    margin-left: -375px;
+    top: -400px;
+    height: 290px;
+    padding: 120px;
+    text-align: center;
+}
+
+#score-entry,
+#leader-board {
+	position: absolute;
+	top: 30px;
+	width: 500px;
+	/* border: 1px solid cyan; */
+}
+
+#submitButton {
+	width: 200px;
+	height: 88px;
+	background-color: #aa297b;
+	color: #fdf759;
+	border: none;
+	text-transform: uppercase;
+	font-family: 'i_pixel_uregular';
+	display: none;
+	font-size: 36px;
+}
+
+#scoreEntry {
+	font-size: 2em;
+	margin-bottom: 1em;
+	color: #33c5f3;
+	display: none;
+}
+
+#scoreName {
+	font-size: 1.4em;
+    padding: 20px;
+	color: #555;
+	text-ttransform: uppercase;
+	display: none;
+	margin-bottom: 1em;
+}
+
+#leaderboard {
+	font-size: 2em;
+    margin-bottom: 1em;
+    color: #33c5f3;
+    display: none;
+
+}
+
+#leaderboardTable {
+	width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    display: none;
+}
+
+#leaderboardTable th {
+	font-size: 1.8em;
+    color: #fdf254;
+	border-bottom: 1px solid;
+}
+
+#leaderboardTable td {
+	text-align: center;
+	font-size: 1.4em;
+    color: #fdf254;
+}

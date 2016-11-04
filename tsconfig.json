@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "noEmitHelpers": true,
+        "noEmitOnError": true,
+        "noImplicitAny": false,
+        "noImplicitUseStrict": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "experimentalDecorators": true,
+        "inlineSourceMap": false,
+        "target": "es5"
+    },
+    "files": [
+        "code/mapracer/carController.ts",
+        "code/mapracer/mapController.ts",
+        "code/mapracer/routeEngine.ts",
+        "code/mapracer/raceEngine.ts",
+        "code/mapracer/mapRacer.ts"
+    ]
+}

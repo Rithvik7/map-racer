@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title> Map Racer 3000 </title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>    
+        <script>
+            var dojoConfig = {
+                async: true,
+                isDebug: true,
+                paths: {
+                mapRacer: location.href.replace(location.href.split("/").pop(),"") + "mapracer",
+                }
+            };
+        </script>
+        <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+        <script src="https://js.arcgis.com/4.0/"></script>
+        <script>
+        require(["mapRacer/mapRacer" ], function (mapRacerMap) {
+            
+        });
+        </script>
+	</head>
+
+	<body>
+		<div id="logo"></div>
+
+		<div id="score-high">HIGH SCORE <span id="highscore">00000</span></div>
+		<div id="score-current">SCORE <span id="score">0</span></div>
+
+		<div id="viewDiv">
+			<div id="car" class = "car">
+                <img id = "carSprite" src="../img/carSprite0.gif"/>
+            </div>
+		</div>
+
+		<div id="page-assets">
+
+			<div id="score-entry">
+				<div id="scoreEntry">ENTER YOUR NAME:</div>
+				<input id="scoreName" type="text"></br>
+				<button id="submitButton" type="button">SUBMIT</button>
+			</div>
+
+			<div id="leader-board">
+				<div id="leaderboard">LEADERBOARD</div>
+				<table id="leaderboardTable">
+					<thead>
+						<tr>
+							<th>NAME</th>
+							<th>SCORE</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td id="name1"></td>
+							<td id="score1"></td>
+						</tr>
+						<tr>
+							<td id="name2"></td>
+							<td id="score2"></td>
+						</tr>
+						<tr>
+							<td id="name3"></td>
+							<td id="score3"></td>
+						</tr>
+						<tr>
+							<td id="name4"></td>
+							<td id="score4"></td>
+						</tr>
+						<tr>
+							<td id="name5"></td>
+							<td id="score5"></td>
+						</tr>
+						<tr>
+							<td id="name6"></td>
+							<td id="score6"></td>
+						</tr>
+						<tr>
+							<td id="name7"></td>
+							<td id="score7"></td>
+						</tr>
+						<tr>
+							<td id="name8"></td>
+							<td id="score8"></td>
+						</tr>
+						<tr>
+							<td id="name9"></td>
+							<td id="score9"></td>
+						</tr>
+						<tr>
+							<td id="name10"></td>
+							<td id="score10"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+        
+			<button id="startButton" type="button">Let's race!</button>
+			<button id="tryagainButton" type="button">Try again</button>
+			<button id="leaderboardButton" type="button">Leaderboard</button>
+		</div>
+		<div id="speed">SPEED <span  id="speedo">0</span> MP/H</div>
+		<div id="timer">TIME <span id=raceTime>0</span></div>
+	</body>
+</html>
