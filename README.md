@@ -1,23 +1,23 @@
 <img src="https://raw.githubusercontent.com/EsriUK/map-racer/master/code/img/logo.png">
 
-#About
+# About
 Map Racer 3000 is an addictive retro racing game for ArcGIS written in TypeScript 
 
-#Sample
+# Sample
 You can try a live sample of the app at [esriuk.com/mapracer](http://esriuk.com/mapracer).
 
-#Configuring
+# Configuring
 This app was written in TypeScript, but the repo includes both .ts and compiled .js files. 
 
 The first thing you'll need to is to create your own leaderboard in line 42 of mapRacer.ts (or the equivalent in .js). This is just a simple point feature service in ArcGIS Online/Server.
 
 You can also create your own route by creating a polygon feature service with a single polygon outlining your route. You can add this into line 60 of mapController.ts (or the equivalent in .js). You'll also need to update the staring location in line 49 of mapController.ts.
 
-#Issues
+# Issues
 
 Find a bug or want to request a new feature? Please let us know by submitting an issue.
 
-#Licensing
+# Licensing
 
 Copyright 2016 ESRI (UK) Limited
 
